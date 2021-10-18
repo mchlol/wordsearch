@@ -1,3 +1,5 @@
+/* CANVAS */
+
 const canvas = document.querySelector('canvas');
 
 canvas.width = "402px";
@@ -5,6 +7,7 @@ canvas.height = "402px";
 
 const ctx = canvas.getContext('2d');
 
+// styles for the line to be drawn */
 ctx.strokeStyle = '#000000';
 ctx.lineWidth = 10;
 ctx.lineCap = 'round';
