@@ -66,10 +66,21 @@ Plants:
 
 ## Workflow
 
-### Template/Design/Wireframe
-
 Create the grid.   
 Go back to the pixel sketchpad project and take a look at the code to remember how I did it.  
 I've considered just hard coding the actual wordsearch and save it as a kind of prototype, before coding the script to automatically generate it. Then I realised I would have to hand code 100 cells and decided that is not in the spirit of what I'm trying to do here 😅  
+
+So I need to write a function thts will create cells in the form of a span tag with a letter inside.  
+Each 'cell' (span tag) should have a class of cell and an id of cell000 (number from 001 to 100).  
+Create a cell, give it a common class, give it a unique ID (number from 1 to 100), append it to the grid.  
+
+**Problem 1** - Cell is only appending to the grid once. Even though this part of the code is inside the for loop which counts from 0 to 100.  
+The problem was in the nested for loop that was supposed to be handing out unique IDs. I actually realised I didn't need this as I was already counting to *value* (100) so I used the counter variable in the for loop to provide the id. Deleting that part of the code fixed the problem 🎶but I don't know why 🎶.
+
+**Problem 2** - Span is an inline element. So when the cells are now appending to the grid, they continue horizontally instead of wrapping. 
+[!](./screenshots/screenshot-p2.png)
+
+The grid is set to `grid-template: repeat(10, 10%)/repeat(10,10%);`.  
+I changed span to div (from an inline element to a block element) and the divs then fill the width of the container but stretch it out vertically. I want the create elements, whether they are spans or divs, to be bound by the size of their container.  
 
 
