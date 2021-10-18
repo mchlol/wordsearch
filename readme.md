@@ -2,8 +2,8 @@
 
 ## Inspiration/Resources
 
-[Word search by ED](https://ed.studio/made-post/algebraic-wordsearch) 
-[Crossword by Adrian Roworth](https://codepen.io/adrianroworth/pen/OpeyZq)
+[Word search by ED](https://ed.studio/made-post/algebraic-wordsearch)  
+[Crossword by Adrian Roworth](https://codepen.io/adrianroworth/pen/OpeyZq) 
 
 ## Planning
 
@@ -61,6 +61,6 @@ Plants:
 
 ### Template/Design/Wireframe
 
-Create the grid. 
-Go back to the pixel sketchpad project and take a look at the code to remember how I did it. 
-I'll hard code the actual wordsearch and save it as a kind of prototype, before coding the script to automatically generate it. 
+Create the grid.   
+Go back to the pixel sketchpad project and take a look at the code to remember how I did it.  
+I'll hard code the actual wordsearch and save it as a kind of prototype, before coding the script to automatically generate it.  
