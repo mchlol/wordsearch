@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wordsearch</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--
+        layers:
+        bottom layer - the grid of letters
+          work out the list of words
+          put them in the grid
+            see pixel sketchpad
+          fill in the remaining cells with random letters
+        top - canvas for drawing on
+          pen needs to have transparency -  more like a highlighter
+            see superdraw
+    -->
+
+    <header>
+        <h1>wordsearch</h1>
+    </header>
+
+    <main>
+        <canvas></canvas>
+        <div class="grid">
+            <span class="cell cell01">D</span>
+            <span class="cell cell02">B</span>
+            <span class="cell cell03">E</span>
+            <span class="cell cell04">G</span>
+            <span class="cell cell05">O</span>
+            <span class="cell cell06">N</span>
+            <span class="cell cell07">I</span>
+            <span class="cell cell08">A</span>
+            <span class="cell cell09">I</span>
+            <span class="cell cell10">T</span>
+            <span class="cell cell11">P</span>
+            <span class="cell cell00">O</span>
+        </div>
+        <div class="words-wrapper">
+            <form>
+                <input type="checkbox" id="arrowhead" name="word" value="arrowhead">
+                <label for="arrowhead">arrowhead</label><br>
+
+                <input type="checkbox" id="calathea" name="word" value="calathea">
+                <label for="calathea">calathea</label><br>
+
+                <input type="checkbox" id="peperomiodes" name="word" value="peperomiodes">
+                <label for="peperomiodes">peperomiodes</label><br>
+
+                <input type="checkbox" id="ficus" name="word" value="ficus">
+                <label for="ficus">ficus</label><br>
+
+                <input type="checkbox" id="philodendron" name="word" value="philodendron">
+                <label for="philodendron">philodendron</label><br>
+
+                <input type="checkbox" id="horse-head" name="word" value="horse-head">
+                <label for="horse-head">horse head</label><br>
+
+                <input type="checkbox" id="pothos" name="word" value="pothos">
+                <label for="pothos">pothos</label><br>
+
+                <input type="checkbox" id="monstera" name="word" value="monstera">
+                <label for="monstera">monstera</label><br>
+
+                <input type="checkbox" id="peace-lily" name="word" value="peace=lily">
+                <label for="peace-lily">peace lily</label><br>
+
+                <input type="checkbox" id="begonia" name="word" value="begonia">
+                <label for="begonia">begonia</label><br>
+
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <small>Inspired by <a href="https://ed.studio/made-post/algebraic-wordsearch/" rel="external"
+                target="_blank">ED</a>. coded by <a href="https://github.com/mchlol" target="_blank">mchlol</a>.</small>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
