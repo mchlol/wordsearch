@@ -3,13 +3,13 @@
 ## Inspiration/Resources
 
 [Word search by ED](https://ed.studio/made-post/algebraic-wordsearch)  
-[Crossword by Adrian Roworth](https://codepen.io/adrianroworth/pen/OpeyZq) [Sitepoint](https://www.sitepoint.com/how-built-pure-css-crossword-puzzle/)
-[The Word Search](https://thewordsearch.com/puzzle/46/star-trek/)
-[Code Guppy](https://codeguppy.com/site/tutorials/word-search.html)
-[Timer, scoreboard](https://lovattspuzzles.com/online-puzzles-competitions/play-daily-word-search-puzzle-online/)
-[My Word Search](https://mywordsearch.com/)
-[Maven Spun](https://mavenspun.com/javascript/word-search/01-create-a-wordsearch-game-board.htm)
-[More about word searches!](https://en.wikipedia.org/wiki/Word_search)
+[Crossword by Adrian Roworth](https://codepen.io/adrianroworth/pen/OpeyZq)  [Sitepoint](https://www.sitepoint.com/how-built-pure-css-crossword-puzzle/)  
+[The Word Search](https://thewordsearch.com/puzzle/46/star-trek/)  
+[Code Guppy](https://codeguppy.com/site/tutorials/word-search.html)  
+[Timer, scoreboard](https://lovattspuzzles.com/online-puzzles-competitions/play-daily-word-search-puzzle-online/)  
+[My Word Search](https://mywordsearch.com/)  
+[Maven Spun](https://mavenspun.com/javascript/word-search/01-create-a-wordsearch-game-board.htm)  
+[More about word searches!](https://en.wikipedia.org/wiki/Word_search)  
 
 ## Planning
 
