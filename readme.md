@@ -10,6 +10,7 @@
 [My Word Search](https://mywordsearch.com/)  
 [Maven Spun](https://mavenspun.com/javascript/word-search/01-create-a-wordsearch-game-board.htm)  
 [Wordfind.js](https://github.com/bunkat/wordfind)
+[Word Search 2 Codepen by Conor092](https://codepen.io/Conor092/pen/OZPMKd)
 
 
 ## Planning
@@ -43,6 +44,7 @@ I'll be using HTML, CSS, & vanilla JavaScript/ES6.
 * a secret extra word - submit for validation for super special prize
 * good if the grid can randomise 
 * cross off a word when it has been found
+* a timer might be fun
 
 ### Quick notes
 
@@ -123,7 +125,22 @@ Add the words to the board and fill in the rest of the cells with random letters
 It should look something like this:  
 ![bones](./screenshots/boneswithwords.png)
 
-*I took a slightly shorter way and went through the DOM in devtools to add the letters, then copy & pasted that code into my html file. Not short exactly, but short enough to give me something to work with.*
+*I realised this part was going to take something more complicated that I haven't worked with yet - matrices. So, I took a slightly shorter way and went through the DOM in devtools to add the letters, then copy & pasted that code into my html file. Not short exactly, but short enough to give me something to work with.*  
+  
+
+## The Canvas
+
+I took the canvas code I worked with on [SuperDraw]() and tried to repurpose it to draw on the grid to find the words. It...did not work. Making the canvas the same size and position as the grid meant the mouse position was all wrong. [I'll come back to this later.](https://stackoverflow.com/questions/17130395/real-mouse-position-in-canvas)
+Just to get something working, I left the canvas as 100% of the window `innerHeight` and `innerWidth` and adjusted the position so that the 'pen' would actually draw on the grid. I found this [answer on StackOverflow](https://stackoverflow.com/questions/25058135/overlay-canvas-on-a-div-with-css) - basically the canvas needs these these properties: `position: absolute`, `overflow: hidden` and `display: block`.  
+The other issue is getting the pen to be transparent. While the pen uses rgba continuous drawing overwrites the transparency. I suspect this will need to be done with `fillStyle` instead of `strokeStyle`.  
+  
+I also added a background image and a bit more styling, yada yada yada.  
+
+### Next up:
+
+- Creating the function that will place the words in the grid and populate the rest of the cells with random letters
+- Setting the canvas directly over the grid
+- Fixing the transparent pen!
 
 
 
